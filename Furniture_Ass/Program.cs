@@ -60,7 +60,7 @@ public class DiningTable : Furniture
 {
     public int NoOfLegs { get; set; }
 
-    public new void Accept()
+    public override void Accept()
     {
         base.Accept();
 
@@ -68,7 +68,7 @@ public class DiningTable : Furniture
         NoOfLegs = Convert.ToInt32(Console.ReadLine());
     }
 
-    public new void Display()
+    public override void Display()
     {
         base.Display();
 
